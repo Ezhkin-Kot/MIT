@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage[12pt]{extsizes}
+\usepackage{fancyvrb}
+\usepackage{indentfirst}
+\usepackage[
+  left=2cm, right=2cm, top=2cm, bottom=2cm, headsep=0.2cm, footskip=0.6cm, bindingoffset=0cm
+]{geometry}
+\usepackage[english,russian]{babel}
+
+
+\begin{document}
+\section*{Вариант 24}
+
+Условные вероятности $q_0(l+1/l)$, $q_j((l+1)/l)$ правильного приема, $p_{0j}((l+1)/l)$, $p_{j0}((l+1)/l)$ трансформации и $p_{0x_j}((l+1)/l)$, $p_{jx_j}((l+1)/l)$ стирания $(l+1)$-ых нулевого и единичного символов, соответственно, запишутся в виде:
+
+\begin{equation}
+  \label{eq:eq1}
+  \left.
+  \begin{aligned}
+    q_0((l+1)/l) &= q_0 q_0^0 + \sum_{i=1}^{K-1} \left( p_{0i} q_0^{0i} + p_{0x_i} q_0^{0x_i} \right) + p_{i0} q_0^{i0} + q_i q_0^i + p_{ix_i} q_0^{ix_i}; \\
+    p_{0j}((l+1)/l) &= q_0 p_{0j}^0 + \sum_{i=1}^{K-1} \left( p_{0i} p_{0j}^{0i} + p_{0x_i} p_{0j}^{0x_i} \right) + p_{i0} p_{0j}^{i0} + q_i p_{0j}^i + p_{ix_i} p_{0j}^{ix_i}; \\
+    p_{j0}((l+1)/l) &= q_0 p_{j0}^0 + \sum_{i=1}^{K-1} \left( p_{0i} p_{j0}^{0i} + p_{0x_i} p_{j0}^{0x_i} \right) + p_{i0} p_{j0}^{i0} + q_i p_{j0}^i + p_{ix_i} p_{j0}^{ix_i}; \\
+    p_{jx_j}((l+1)/l) &= q_0 p_{jx_j}^0 + \sum_{i=1}^{K-1} \left( p_{0i} p_{jx_j}^{0i} + p_{0x_i} p_{jx_j}^{0x_i} \right) + p_{i0} p_{jx_j}^{i0} + q_i p_{jx_j}^i + p_{ix_i} p_{jx_j}^{ix_i}.
+  \end{aligned}
+  \right\}
+\end{equation}
+
+Система (\ref{eq:eq1}) позволяет определить значения безусловных вероятностей $q_0$, $q_j$ правильного приема, $p_{0j}$, $p_{j0}$ трансформации и $p_{0x_j}$, $p_{jx_j}$ стирания для нулевого и токовых символов, соответственно.
+
+\end{document}
+
